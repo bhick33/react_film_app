@@ -1,7 +1,7 @@
 import "../css/MovieCard.css"
 
 function MovieCard({movie}) {
-    function OnFavouriteClick() {
+    function OnFavoriteClick() {
         alert("Clicked!")
     }
     return (
@@ -9,7 +9,7 @@ function MovieCard({movie}) {
             <div className="movie-poster">
                 <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
                 <div className="movie-overlay">
-                    <button className="favorite-btn" onClick={OnFavouriteClick}>
+                    <button className="favorite-btn" onClick={OnFavoriteClick}>
                         ♡
                     </button>
                 </div>
